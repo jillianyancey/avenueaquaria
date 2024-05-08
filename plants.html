@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="assets/stylesheets/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>AvenueAquaria-ShopPlants</title>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <header>
+          <div class="logo"><a href="index.html"><span>AvenueAquaria</span></a></div>
+          <div>
+              <a href="" target="_blank" class="fa fa-search fa-lg pad-right-25"></a>
+              <a href="" target="_blank" class="fa fa-user fa-lg pad-right-25"></a>
+              <a href="" target="_blank" class="fa fa-shopping-cart fa-lg pad-right-25"></a>
+          </div>
+      </header>
+
+
+        <nav>
+            <div class="logo"><a href="index.html"><span>AvenueAquaria</span></a></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            <div class="nav-menu">
+                <div class="side-bar">
+                    <div class="menu">
+                        <div class="item">
+                            <a class="sub-btn">SHOP<i class="fas fa-angle-right dropdown"></i></a>
+                            <div class="sub-menu" style="display: block;">
+                                <a href="fish.html" class="sub-item">Fish</a>
+                                <a href="plants.html" class="sub-item text-white">Plants</a>
+                            </div>
+                        </div>
+                        <div class="item"><a href="services.html">SERVICES</a></div>
+                        <div class="item"><a href="faq.html">FAQ</a></div>
+                        <div class="item"><a href="storepolicies.html">SHIPPING &amp; <br>POLICIES</a></div>
+                        <div class="item"><a href="contact.html">CONTACT US</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-footer">
+                <div>
+                    <a href="" target="_blank" class="fab fa-facebook-f fa-lg"></a>
+                    <a href="" target="_blank" class="fab fa-instagram fa-lg"></a>
+                    <a href="" target="_blank" class="fab fa-twitter fa-lg"></a>
+                    <a href="" target="_blank" class="fab fa-pinterest fa-lg"></a>
+                </div>
+                <div class="footer-text">
+                Privacy Policy <br>
+                &copy; 2024 AvenueAquaria 
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="plants-container">
+                <div class="pg-title">
+                    <h1>Shop for Plants</h1>
+                </div>
+             
+                <div class="plant-text">
+                  <h2 id="plants">LIVE PLANTS</h2>
+                  <p>Free overnight FedEx shipping on all live plant and fish orders over $100.  
+                    Overnight FedEx shipping is $25 for all live plant and fish orders under $100. 
+                  </p>
+                </div>
+
+                <div class="plants-table">
+                    <table style="border-collapse: collapse; border-spacing: 0px;" id="plantsTable" class="plantstable">
+
+                        <thead >
+                          <tr>
+                            <th style="cursor: default;"></th>
+                            <th class="sort-label" onclick="sortTable(1,'asc')">NAME</th>
+                            <th class="sort-label" onclick="sortTable(2,'asc')">DESCRIPTION</th>
+                            <th class="sort-label" onclick="sortTable(3,'asc')" >PRICE</th>
+                            <th style="cursor: default;">PURCHASE</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-cell plantimg" cell-label=""><img class="plant-image" src="./assets/images/waterprimrose.jpg"></td>
+                            <td class="text-cell bold" cell-label="Name">Water Primrose</td>
+                            <td class="text-cell" cell-label="Description">Midground plant;<br>needs high intensity lighting</td>
+                            <td class="text-cell" cell-label="Price">$3.75</td>
+                            <td class="text-cell" cell-label="Purchase"><button>Add to Cart</button></td>
+                          </tr>
+                  
+                          <tr>
+                            <td class="text-cell plantimg" cell-label=""><img class="plant-image" src="./assets/images/Hairgrass.jpg"></td>
+                            <td class="text-cell bold" cell-label="Name">Giant Hairgrass</td>
+                            <td class="text-cell" cell-label="Description">Background plant;<br>prefers moderate to high lighting</td>
+                            <td class="text-cell" cell-label="Price">$7.50</td>
+                            <td class="text-cell" cell-label="Purchase"><button>Add to Cart</button></td>
+                          </tr>
+                  
+                          <tr>
+                            <td class="text-cell plantimg" cell-label=""><img class="plant-image" src="./assets/images/Hornwort.jpg"></td>
+                            <td class="text-cell bold" cell-label="Name">Hornwort</td>
+                            <td class="text-cell" cell-label="Description">Midground plant;<br>prefers moderate to high lighting</td>
+                            <td class="text-cell" cell-label="Price">$4.85</td>
+                            <td class="text-cell" cell-label="Purchase"><button>Add to Cart</button></td>
+                          </tr>
+                  
+                          <tr>
+                            <td class="text-cell plantimg" cell-label=""><img class="plant-image" src="./assets/images/DwarfAnubias.jpg"></td>
+                            <td class="text-cell bold" cell-label="Name">Dwarf Anubias</td>
+                            <td class="text-cell" cell-label="Description">Foreground plant;<br>needs low lighting</td>
+                            <td class="text-cell" cell-label="Price">$5.25</td>
+                            <td class="text-cell" cell-label="Purchase"><button>Add to Cart</button></td>
+                          </tr>
+                  
+                          <tr>
+                            <td class="text-cell plantimg" cell-label=""><img class="plant-image" src="./assets/images/RedMelonSword.jpg"></td>
+                            <td class="text-cell bold" cell-label="Name">Red Melon Sword</td>
+                            <td class="text-cell" cell-label="Description">Midground plant;<br>needs high intensity lighting</td>
+                            <td class="text-cell" cell-label="Price">$6.15</td>
+                            <td class="text-cell" cell-label="Purchase"><button>Add to Cart</button></td>
+                          </tr>
+                  
+                          <tr>
+                            <td class="text-cell plantimg" cell-label=""><img class="plant-image" src="./assets/images/MicroSword.jpg"></td>
+                            <td class="text-cell bold" cell-label="Name">Micro Sword</td>
+                            <td class="text-cell" cell-label="Description">Foreground plant;<br>needs moderate lighting</td>
+                            <td class="text-cell" cell-label="Price">$4.00</td>
+                            <td class="text-cell" cell-label="Purchase"><button>Add to Cart</button></td>
+                          </tr>
+                        </tbody>
+                
+                                       
+                      </table>
+                </div>
+
+                <div class="plant-text2">
+                  <h2 id="chooseplant">CHOOSING A PLANT</h2>
+                  <p>With so many choices, it can be difficult to decide which plant is right for your aquarium. Check out this video
+                    for helpful plant selection tips. Still have questions? <a class="link-intext" href="contact.html">Contact us</a> for help! 
+                  </p>
+                </div>
+                <div class="plant-video">
+                  <div class="plantauto-resizable-iframe">
+                    <div>
+                      <img class="plant-circlestyle plant-circle1pos" src="assets/images/PurpleCircle.png">
+                      <iframe src="https://www.youtube.com/embed/VxqfdC5vk5Q" title="If You are New to Aquatic Plants 
+                      You NEED to See This! Guide To Aquatic Plant Types" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                      encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+               
+            </section>
+          
+        </main>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/javascripts/scripts.js"></script>  
+    <script>
+        function sortTable(n,z) {
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById("plantsTable");
+      switching = true;
+      //Set the sorting direction to ascending:
+      dir = z === "asc" ? "asc" : "desc";
+      var headers=table.getElementsByTagName("th");
+      for (var i = 0; i < headers.length; i++) {
+        headers [i].classList.remove("sorted");
+      }
+      headers[n].classList.add("sorted");
+      
+      /*Make a loop that will continue until
+      no switching has been done:*/
+      while (switching) {
+        //start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /*Loop through all table rows (except the
+        first, which contains table headers):*/
+        for (i = 1; i < (rows.length - 1); i++) {
+          //start by saying there should be no switching:
+          shouldSwitch = false;
+          /*Get the two elements you want to compare,
+          one from current row and one from the next:*/
+          x = rows[i].getElementsByTagName("td")[n];
+          y = rows[i + 1].getElementsByTagName("td")[n];
+          /*check if the two rows should switch place,
+          based on the direction, asc or desc:*/
+          if (dir == "asc") {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch= true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          /*If a switch has been marked, make the switch
+          and mark that a switch has been done:*/
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          //Each time a switch is done, increase this count by 1:
+          switchcount ++;      
+        } else {
+          /*If no switching has been done AND the direction is "asc",
+          set the direction to "desc" and run the while loop again.*/
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+    </script>  
+   
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="assets/stylesheets/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>AvenueAquaria-Policies</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <header>
+            <div class="logo"><a href="index.html"><span>AvenueAquaria</span></a></div>
+            <div>
+                <a href="" target="_blank" class="fa fa-search fa-lg pad-right-25"></a>
+                <a href="" target="_blank" class="fa fa-user fa-lg pad-right-25"></a>
+                <a href="" target="_blank" class="fa fa-shopping-cart fa-lg pad-right-25"></a>
+            </div>
+        </header>
+
+
+        <nav>
+            <div class="logo"><a href="index.html"><span>AvenueAquaria</span></a></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            <div class="nav-menu">
+                <div class="side-bar">
+                    <div class="menu">
+                        <div class="item">
+                            <a class="sub-btn">SHOP<i class="fas fa-angle-right dropdown"></i></a>
+                            <div class="sub-menu">
+                                <a href="fish.html" class="sub-item">Fish</a>
+                                <a href="plants.html" class="sub-item">Plants</a>
+                            </div>
+                        </div>
+                        <div class="item"><a href="services.html">SERVICES</a></div>
+                        <div class="item"><a href="faq.html">FAQ</a></div>
+                        <div class="item"><a class="text-white" href="storepolicies.html">SHIPPING &amp; <br>POLICIES</a></div>
+                        <div class="item"><a href="contact.html">CONTACT US</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-footer">
+                <div>
+                    <a href="" target="_blank" class="fab fa-facebook-f fa-lg"></a>
+                    <a href="" target="_blank" class="fab fa-instagram fa-lg"></a>
+                    <a href="" target="_blank" class="fab fa-twitter fa-lg"></a>
+                    <a href="" target="_blank" class="fab fa-pinterest fa-lg"></a>
+                </div>
+                <div class="footer-text">
+                Privacy Policy <br>
+                &copy; 2024 AvenueAquaria 
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="policy-container">
+                <div class="pg-title">
+                    <h1>Shipping &amp; Store Policies</h1>
+                </div>
+               
+                <div class="text">
+                    <h2 id="shipping">SHIPPING</h2>
+                    <p>We offer free overnight FedEx shipping on all live fish and plant orders over $100.  
+                        Overnight FedEx shipping is $25 for all live fish and plant orders under $100. We ship 
+                        live fish and plants Monday through Thursday. Orders placed after on Thursday after 12 PM 
+                        through Sunday will ship the following Monday.
+                    </p>
+                    <button class="accordion-button">READ MORE</button>
+                    <p class="overflow">Once your order ships, you will receive an email with your FedEx Tracking Number. Please 
+                        <a class=link-intext href="contact.html">contact us</a> immediately if your delivery is delayed or does not arrive on schedule or if 
+                        your package arrives damaged. 
+                    </p>
+                    <h2 id="guarantees">GUARANTEES</h2>
+                    <p>We guarantee live arrival on all of our live fish orders. In the unlikely event that you 
+                        experience the loss of a fish, we will refund you the cost of the fish that you purchased. 
+                        If you experience the loss of all fish in the order, we will also refund you any shipping 
+                        costs that you paid. Please be prepared to be home at the time of your delivery, and 
+                        <a class=link-intext href="contact.html">contact us</a> immediately (by phone or email) if you experience loss. 
+                    </p>
+                    <button class="accordion-button">READ MORE</button>
+                    <p class="overflow">We guarantee the health of our fish for 30 days after arrival. Please <a class=link-intext href="contact.html">contact us</a>
+                        immediately if you have any concerns about the health and well-being of your new fish. In many cases, we can 
+                        recommend simple adjustments to husbandry that can prevent the loss of your fish. If you do 
+                        experience loss, we will refund you the purchase price of your fish.
+                    </p>
+                    <h2 id="refunds">REFUNDS &amp; EXCHANGES</h2>
+                    <p>If for any reason you are unsatisfied with your new fish or live plants, please 
+                        <a class=link-intext href="contact.html">contact us</a> immediately. We offer limited exchanges and returns of live plants 
+                        and in-store exchanges of live fish on a case-by-case basis. Please see <a class=link-intext href="#guarantees">Guarantees</a> 
+                        for information on our live arrival and health guarantees.
+                    </p>
+                    <button class="accordion-button">READ MORE</button>
+                    <p class="overflow bottom-margin">Most orders can be canceled within four hours of placement for a full refund, 
+                        including shipping costs. Shipped orders cannot be canceled. Except for shipping costs associated 
+                        with our live arrival and health guarantees, shipping costs are non-refundable. 
+                    </p>
+                </div>
+                <div class="img-pleco">
+                </div>
+
+            </section>
+          
+        </main>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/javascripts/scripts.js"></script>    
+    <script>
+        var a = document.getElementsByClassName("accordion-button");
+        var i;
+
+        for (i = 0; i < a.length; i++) {
+        a[i].addEventListener("click", function() {
+            this.classList.toggle("accordion-active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            this.textContent = "READ MORE";
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            this.textContent = "READ LESS";
+            }
+        });
+        }
+    </script>
+</body>
+</html>
